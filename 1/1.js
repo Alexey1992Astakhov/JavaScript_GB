@@ -13,9 +13,9 @@
 Уточнение: пользователь всегда вводит корректное число.
 */
 
-const tempCels = promt("Введите температуру в градусах Цельсия: ");
+const tempCels = Number.parseFloat(prompt("Введите температуру в градусах Цельсия: "));
 const tempFahreng = (9 / 5) * tempCels + 32;
-alert('Температура ' + tempCels + ' градусов по Цельсию в градусах \
-по Фаренгейту равна: ' + Math.round(tempFahreng * 100) / 100);
+alert(`Температура ${tempCels} градусов по Цельсию в градусах \
+по Фаренгейту равна: ${Math.round(tempFahreng * 100) / 100}`);
 
 
