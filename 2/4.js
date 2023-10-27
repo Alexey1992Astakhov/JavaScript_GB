@@ -23,4 +23,9 @@
 Подсказка: Возможно, вам понадобится округление чисел и оператор %.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const number = +prompt("Введите число:");
+const hundreds = Math.trunc((number % 1000) / 100);
+const dozens = Math.trunc((number % 100) / 10);
+const pieces = Math.trunc(number % 10);
+alert(`В числе ${number} количество сотен: ${hundreds},\
+десятков: ${dozens}, единиц: ${pieces}`);
