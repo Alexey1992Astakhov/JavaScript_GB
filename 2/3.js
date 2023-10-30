@@ -14,7 +14,7 @@
 число 32.
 */
 
-let dayNumber = +prompt("Введите число: ");
+const dayNumber = +prompt("Введите число: ");
 
 if (dayNumber <= 0) alert("Отрицательное значение");
 else if (dayNumber <= 10)

@@ -13,7 +13,11 @@
 в консоль "Одно или более значений некорректно.".
 */
 
-let positive = Number.parseFloat(prompt('Введите положительное число: '));
-let negative = Number.parseFloat(prompt('Введите отрицательное число: '));
+let positive = Number.parseFloat(prompt("Введите положительное число: "));
+let negative = Number.parseFloat(prompt("Введите отрицательное число: "));
 
-console.log((positive > 0 && negative < 0 ? "Все значения верные." : "Одно или более значений некорректно."));
+if (positive > 0 && negative < 0) {
+  console.log("Все значения верные.");
+} else {
+  console.log("Одно или более значений некорректно.");
+}
