@@ -10,4 +10,19 @@
 три числа. Проверять их не нужно.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const numMax = function (n1, n2, n3) {
+  return Math.max(n1, n2, n3);
+};
+
+const num1 = +prompt("Введите первое число: ");
+const num2 = +prompt("Введите второе число: ");
+const num3 = +prompt("Введите третье число: ");
+
+console.log(numMax(num1, num2, num3));
+console.log(
+  `Максимальное значение среди чисел ---> ${num1}, ${num2}, ${num3} равно : --->${Math.max(
+    num1,
+    num2,
+    num3
+  )}`
+);

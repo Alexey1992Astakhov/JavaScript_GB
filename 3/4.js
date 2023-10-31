@@ -18,4 +18,28 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 Демонстрировать работы функций не обязательно.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+function sum(a, b) {
+  return a + b;
+}
+
+function diff(a, b) {
+  if (a > b) {
+    return a - b;
+  }
+  return b - a;
+}
+
+function mult(a, b) {
+  return a * b;
+}
+
+function div(a, b) {
+  return a / b;
+}
+
+const numA = +prompt(`Введите число a: `);
+const numB = +prompt(`Введите число b: `);
+alert(`Сумма числел a и b: ${sum(numA, numB)}`);
+alert(`Разность числел a и b: ${diff(numA, numB)}`);
+alert(`Произведение числел a и b: ${mult(numA, numB)}`);
+alert(`Деление числел a и b: ${div(numA, numB)}`);
