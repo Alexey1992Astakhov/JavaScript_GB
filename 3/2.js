@@ -17,5 +17,7 @@ const userMoney = Number(prompt("Введите число: "));
 if (isNaN(userMoney)) {
   alert("Значение задано неверно");
 } else {
-  console.log(salary(userMoney));
+  console.log(
+    `Размер заработной платы за вычетом налогов равен ${salary(userMoney)}`
+  );
 }
