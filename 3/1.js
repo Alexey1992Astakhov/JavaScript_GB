@@ -7,8 +7,6 @@
 который получаем от функции, в консоль.
 */
 
-const numCub = function (num) {
-  return num ** 3;
-};
+const numCub = (num) => num ** 3;
 
 console.log(numCub(3));

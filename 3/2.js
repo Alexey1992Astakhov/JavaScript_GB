@@ -9,12 +9,10 @@
 сообщение "Размер заработной платы за вычетом налогов равен N."
 */
 
-const salary = (money) => {
-  return money * 0.87;
-};
+const salary = (money) => money * 0.87;
 
 const userMoney = Number(prompt("Введите число: "));
-if (isNaN(userMoney)) {
+if (Number.isNaN(userMoney)) {
   alert("Значение задано неверно");
 } else {
   console.log(
