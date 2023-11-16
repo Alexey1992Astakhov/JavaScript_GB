@@ -15,4 +15,6 @@ const numbers = {
   key7: 7,
 };
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const values = Object.values(numbers);
+const valuesFilt = values.filter((value) => value >= 3);
+console.log(valuesFilt);
