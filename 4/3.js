@@ -15,13 +15,21 @@
 */
 
 const array = [];
-const arrayNew = array;
+const arrayNew = [];
 let sum = 0;
+// let idx = array.indexOf(element);
 for (let i = 0; i < 5; i++) {
-  array.push(Math.round(Math.random() * 10));
+  array.push(Math.trunc(Math.random() * 10));
   sum += array[i];
+  array.forEach((item, index) => {
+    if (item === 3) arrayNew.push(index + 1);
+  });
+  // while (idx !== -1) {
+  //   arrayNew.push(idx);
+  //   idx = array.indexOf(element, idx + 1);
+  // }
 }
 console.log(array);
 console.log(sum);
 console.log(Math.min(...array));
-console.log(arrayNew.indexOf(3));
+console.log(arrayNew);

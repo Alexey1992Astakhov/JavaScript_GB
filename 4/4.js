@@ -13,7 +13,7 @@ xxxxx
 */
 
 for (let i = 0; i < 21; i++) {
-  let slide = "";
+  let slide = "x";
   for (let j = 0; j < i; j++) {
     slide += "x";
   }
