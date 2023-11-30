@@ -6,6 +6,7 @@ let superDrop = document.querySelectorAll(".dropdown-item");
 superDrop.forEach((element) => {
   element.classList.add("super-dropdown");
 });
+
 // 2. У элемента с классом btn необходимо убрать класс "btn-secondary", если он присутствует у этого элемента, либо добавить, если такого класса у элемента не было.
 
 let btn = document.querySelector(".btn");
