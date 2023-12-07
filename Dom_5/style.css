@@ -1,0 +1,25 @@
+.product {
+    width: 700px;
+    height: 400px;
+}
+
+.product__image {
+    display: inline-block;
+    width: 30%;
+    float: left;
+}
+
+.product__info {
+    display: inline-block;
+    width: 70%;
+    float: left;
+}
+
+.product__image img {
+    width: 100%;
+    height: 100%;
+}
+
+#productTemplate {
+    display: none;
+}
