@@ -60,23 +60,19 @@ class Order {
         this.products = [];
     }
 
-    get count() {
-        return this.products.length;
-    }
-
     addProduct(product) {
         this.products.push(product);
     }
 
     getTotalPrice() {
-            const prices = this.products.map((product) => {
-            return product.price;
-            });
-            const sum = prices.reduce((acc, num) => {
-            return acc + num;
-            }, 0);
-            return sum;
-        }
+        const prices = this.products.map((product) => {
+        return product.price;
+        });
+        const sum = prices.reduce((acc, num) => {
+        return acc + num;
+        }, 0);
+        return sum;
+    }
 }
 
 const order = new Order(12345);
